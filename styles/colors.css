@@ -1,0 +1,24 @@
+:root {
+  --primary: 0, 82, 255;
+  --secondary: 254, 149, 38
+  --info: 255, 203, 47;
+  --success: 83, 216, 106;
+  --error: 255, 52, 52;
+}
+
+.square {
+  margin: 10px 10px;
+}
+
+.square-small {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(var(--primary), 1);
+  
+}
+
+.square-big {
+  width: 130px;
+  height: 130px;
+  background-color: rgba(var(--success), 1)
+}

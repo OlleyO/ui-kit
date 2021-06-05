@@ -24,16 +24,27 @@
 }
 
 .head-row span:first-child {
-  margin-right: 65px;
+  margin-right: 95px;
 }
 
-.row span:first-child,
+.head-row span:nth-child(2) {
+  margin-right: 60px;
+}
+
+.row span:first-child {
+  margin-right: 60px;
+}
+
 .row span:nth-child(2) {
-  margin-right: 30px;
+  margin-right: 84px;
 }
 
 span:nth-last-child(2) {
   margin-right: 152px;
+}
+
+.head-row span:nth-child(3) {
+  margin-right: 110px;
 }
 
 h1,

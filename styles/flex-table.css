@@ -1,0 +1,47 @@
+.flex-table {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 99%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head-row {
+  height: 67px;
+  background-color: #e6eeff;
+}
+
+.row {
+  border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+}
+
+.row,
+.head-row {
+  padding-left: 95px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.head-row span:first-child {
+  margin-right: 65px;
+}
+
+.row span:first-child,
+.row span:nth-child(2) {
+  margin-right: 30px;
+}
+
+span:nth-last-child(2) {
+  margin-right: 152px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  display: inline;
+}

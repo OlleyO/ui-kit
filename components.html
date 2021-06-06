@@ -35,5 +35,51 @@
 
     <button class="btn ghost primary p4">Button</button>
     <button class="btn ghost primary p4" disabled>Button</button>
+
+    <button class="btn ghost primary p4 iconed">
+      <svg class="feather left">
+        <use
+          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
+        ></use>
+      </svg>
+      Button
+    </button>
+
+    <button class="btn ghost primary p4 iconed" disabled>
+      <svg class="feather left">
+        <use
+          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
+        ></use>
+      </svg>
+      Button
+    </button>
+
+    <button class="btn ghost primary p4 iconed">
+      Button
+      <svg class="feather right">
+        <use
+          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-right"
+        ></use>
+      </svg>
+    </button>
+
+    <button class="btn ghost primary p4 iconed" disabled>
+      Button
+      <svg class="feather right">
+        <use
+          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-right"
+        ></use>
+      </svg>
+    </button>
+
+    <input placeholder="Normal" class="input" type="text" />
+    <div class="input-container">
+      <input placeholder="Error" class="input error" type="text" />
+      <p class="explanation p4">With explanation</p>
+    </div>
+    <div class="input-container">
+      <input placeholder="Alert" class="input alert" type="text" />
+      <p class="explanation p4">With explanation</p>
+    </div>
   </body>
 </html>

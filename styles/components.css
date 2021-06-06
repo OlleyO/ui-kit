@@ -1,0 +1,70 @@
+.btn {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 131px;
+  height: 48px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn.ghost {
+  color: #0052ff;
+  background-color: #ffffff;
+  border: solid 1px;
+}
+
+.btn.ghost.primary {
+  border-color: #0052ff;
+}
+
+.btn.ghost.primary:hover {
+  background-color: #e6eeff;
+  box-shadow: 0px -2px 10px rgba(25, 1, 52, 0.12);
+}
+
+.btn.ghost.primary:focus {
+  background-color: #e6eeff;
+  box-shadow: 0px -2px 10px rgba(25, 1, 52, 0.12);
+}
+
+.btn.ghost.primary:disabled {
+  color: #b3cbff;
+  background-color: #ffffff;
+  border-color: #b3cbff;
+}
+
+.btn.primary:hover {
+  background-color: #4d86ff;
+}
+
+.btn.btn.primary:focus {
+  background-color: #4d86ff;
+}
+
+.feather {
+  position: absolute;
+
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.feather.left {
+  left: 25px;
+}
+
+.feather.right {
+  right: 25px;
+}
+
+.btn.iconed {
+  width: 159px;
+  height: 48px;
+}

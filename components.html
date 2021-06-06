@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
+    <link rel="stylesheet" href="./styles/shadows.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <script src="./node_modules/feather-icons/dist/feather.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <button class="btn primary p4">Button</button>
+    <button class="btn primary p4" disabled>Button</button>
+    <button class="btn iconed primary p4">
+      <svg class="feather left">
+        <use
+          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
+        />
+      </svg>
+      Button
+    </button>
+
+    <button class="btn iconed primary p4" disabled>
+      <svg class="feather left">
+        <use
+          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
+        ></use>
+      </svg>
+      Button
+    </button>
+
+    <button class="btn ghost primary p4">Button</button>
+    <button class="btn ghost primary p4" disabled>Button</button>
+  </body>
+</html>

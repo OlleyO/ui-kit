@@ -72,7 +72,9 @@
       </svg>
     </button>
 
-    <input placeholder="Normal" class="input" type="text" />
+    <div class="input-container">
+      <input placeholder="Normal" class="input" type="text" />
+    </div>
     <div class="input-container">
       <input placeholder="Error" class="input error" type="text" />
       <p class="explanation p4">With explanation</p>
@@ -81,5 +83,18 @@
       <input placeholder="Alert" class="input alert" type="text" />
       <p class="explanation p4">With explanation</p>
     </div>
+
+    <div class="input-container">
+      <input type="text" class="input" placeholder="Disabled" disabled />
+    </div>
+
+    <div class="input-container">
+      <i class="icon left" data-feather="user"></i>
+      <input class="input primary" type="text" />
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

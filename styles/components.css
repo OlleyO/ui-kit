@@ -52,18 +52,28 @@
   margin: 25px;
 }
 
+.input-container .icon.left + .input {
+  padding-left: 30px;
+}
+
+.input-container .icon.right + .input {
+  padding-right: 30px;
+}
+
 .input-container .icon {
   position: absolute;
 }
 
-.icon.left {
+.input-container .icon.left {
   padding: 15px;
   text-align: left;
+  left: 25px;
 }
 
-.icon.right {
+.input-container .icon.right {
   padding: 15px;
   text-align: right;
+  left: 310px;
 }
 
 .feather {
@@ -76,12 +86,16 @@
   fill: none;
 }
 
-.feather.left {
-  left: 25px;
+.btn.iconed .icon {
+  position: absolute;
 }
 
-.feather.right {
-  right: 40px;
+.btn.iconed .icon.left {
+  left: 50px;
+}
+
+.btn.iconed .icon.right {
+  left: 125px;
 }
 
 .btn.iconed {

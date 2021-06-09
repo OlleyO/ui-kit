@@ -15,61 +15,38 @@
   <body>
     <button class="btn primary p4">Button</button>
     <button class="btn primary p4" disabled>Button</button>
-    <button class="btn iconed primary p4">
-      <svg class="feather left">
-        <use
-          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
-        />
-      </svg>
+    <button class="btn primary p4 iconed">
+      <i class="icon left" data-feather="arrow-left"></i>
       Button
     </button>
 
-    <button class="btn iconed primary p4" disabled>
-      <svg class="feather left">
-        <use
-          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
-        ></use>
-      </svg>
+    <button class="btn primary p4 iconed">
       Button
+      <i class="icon right" data-feather="arrow-right"></i>
     </button>
 
     <button class="btn ghost primary p4">Button</button>
+
     <button class="btn ghost primary p4" disabled>Button</button>
 
     <button class="btn ghost primary p4 iconed">
-      <svg class="feather left">
-        <use
-          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
-        ></use>
-      </svg>
-      Button
-    </button>
-
-    <button class="btn ghost primary p4 iconed" disabled>
-      <svg class="feather left">
-        <use
-          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-left"
-        ></use>
-      </svg>
+      <i class="icon left" data-feather="arrow-left"></i>
       Button
     </button>
 
     <button class="btn ghost primary p4 iconed">
       Button
-      <svg class="feather right">
-        <use
-          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-right"
-        ></use>
-      </svg>
+      <i class="icon right" data-feather="arrow-right"></i>
+    </button>
+
+    <button class="btn ghost primary p4 iconed" disabled>
+      <i class="icon left" data-feather="arrow-left"></i>
+      Button
     </button>
 
     <button class="btn ghost primary p4 iconed" disabled>
       Button
-      <svg class="feather right">
-        <use
-          xlink:href="./node_modules/feather-icons/dist/feather-sprite.svg#arrow-right"
-        ></use>
-      </svg>
+      <i class="icon right" data-feather="arrow-right"></i>
     </button>
 
     <div class="input-container">
@@ -92,6 +69,83 @@
       <i class="icon left" data-feather="user"></i>
       <input class="input primary" type="text" />
     </div>
+
+    <div class="input-container">
+      <i class="icon left" data-feather="user"></i>
+      <input type="text" class="input error" />
+      <p class="explanation p4">With explanation</p>
+    </div>
+
+    <div class="input-container">
+      <i class="icon left" data-feather="user"></i>
+      <input type="text" class="input success" />
+    </div>
+
+    <div class="input-container">
+      <i class="icon left" data-feather="user"></i>
+      <input type="text" class="input alert" />
+      <p class="explanation p4">With explanation</p>
+    </div>
+
+    <div class="input-container">
+      <i class="icon right" data-feather="eye-off"></i>
+      <input class="input primary" type="text" />
+    </div>
+
+    <div class="input-container">
+      <i class="icon left" data-feather="user"></i>
+      <input class="input primary" type="text" disabled />
+    </div>
+
+    <div class="input-container">
+      <i class="icon right" data-feather="eye-off"></i>
+      <input class="input primary" type="text" />
+    </div>
+
+    <div class="input-container">
+      <i class="icon right" data-feather="eye-off"></i>
+      <input type="text" class="input error" />
+      <p class="explanation p4">With explanation</p>
+    </div>
+
+    <div class="input-container">
+      <i class="icon right" data-feather="eye-off"></i>
+      <input type="text" class="input success" />
+    </div>
+
+    <div class="input-container">
+      <i class="icon right" data-feather="eye-off"></i>
+      <input type="text" class="input alert" />
+      <p class="explanation p4">With explanation</p>
+    </div>
+
+    <div class="input-container">
+      <i class="icon right" data-feather="eye-off"></i>
+      <input class="input primary" type="text" disabled />
+    </div>
+
+    <!-- <select class="dropdown" name="select" id="select">
+      <option value="-1" selected>Select</option>
+      <option value="0">First</option>
+      <option value="1">Second</option>
+      <option value="2">Third</option>
+    </select> -->
+
+    <div class="dropdown-wrapper">
+      <div class="dropdown">
+        <div class="select_trigger">
+          <span>First</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="options">
+          <span class="option selected" data-value="0">First</span>
+          <span class="option" data-value="1">Second</span>
+          <span class="option" data-value="2">Third</span>
+        </div>
+      </div>
+    </div>
+
+    <input class="calender" type="date" />
 
     <script>
       feather.replace();

@@ -181,3 +181,106 @@
 .input:disabled::placeholder {
   color: #bdbdbd;
 }
+
+/* dropdown */
+.select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 325px;
+  height: 54px;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0052ff;
+  border-radius: 4px;
+  color: #00194c;
+}
+
+.select_trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  height: 60px;
+  cursor: pointer;
+  color: #00194c;
+}
+
+.arrow {
+  position: relative;
+  height: 15px;
+  width: 15px;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.arrow::before {
+  left: -5px;
+  transform: rotate(45deg);
+  background-color: #0052ff;
+}
+.arrow::after {
+  left: 5px;
+  transform: rotate(-45deg);
+  background-color: #0052ff;
+}
+.open .arrow::before {
+  left: -5px;
+  transform: rotate(-45deg);
+}
+.open .arrow::after {
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+.options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.select.open .options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.option {
+  position: relative;
+  display: block;
+  padding: 0 22px 0 22px;
+  line-height: 60px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 82, 255, 0.08);
+}
+
+.option:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.option:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.option:hover,
+.select_trigger:hover {
+  cursor: pointer;
+  color: #0052ff;
+}

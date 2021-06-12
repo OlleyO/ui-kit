@@ -62,6 +62,7 @@
 
 .input-container .icon {
   position: absolute;
+  color: inherit;
 }
 
 .input-container .icon.left {
@@ -205,7 +206,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 22px;
-  height: 60px;
+  height: 54px;
   cursor: pointer;
   color: #00194c;
 }
@@ -283,4 +284,88 @@
 .select_trigger:hover {
   cursor: pointer;
   color: #0052ff;
+}
+
+/* TEST CSS */
+/* Floats problem: */
+/* We can clear floats like this: */
+/* element: {
+  clear: both, right, left
+} */
+/* or we can: */
+/* Containing floats: */
+
+.clearfix::afer,
+.clearfix::before {
+  content: "";
+  display: table;
+}
+
+.clearfix::afer {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  top: 40px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #0052ff;
+  border-radius: 4px;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #0052ff;
+}
+
+.checkbox-container .checkmark::after {
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff 1px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-container input:disabled ~ .checkmark {
+  border-color: #e6eeff;
 }

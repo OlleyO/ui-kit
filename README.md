@@ -96,6 +96,7 @@
   <li>Info</li>
   <li>Success</li>
   <li>Error</li>
+  <br />
   <small>Check <a href="https://github.com/OlleyO/ui-kit/blob/main/colors.html">colors.html</a> for more details.<small>
   </ul>
     <h3>Shadows</h3>

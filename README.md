@@ -117,5 +117,6 @@
       </ul>
       <li>Radio</li>
       <li>Checkbox</li>
+      <small>Check <a href="https://github.com/OlleyO/ui-kit/blob/main/components.html">components.html</a> for more details.<small>
     </ul>
     <h2>Usage</h2>

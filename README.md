@@ -98,6 +98,8 @@
   <li>Error</li>
   <small>Check <a href="https://github.com/OlleyO/ui-kit/blob/main/colors.html">colors.html</a> for more details.<small>
   </ul>
+    <h3>Shadows</h3>
+    <p>Some styles for shadows</p>
   <h3>Components</h3>
   <p>It has some basic stylized components:<p>
     <ul>

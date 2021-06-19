@@ -422,3 +422,48 @@
 .container-checkbox input:disabled ~ .radio {
   border-color: #e6eeff;
 }
+
+body {
+  background-color: #eeeeee;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  left: 2.09px;
+  top: 2px;
+  height: 24px;
+  width: 24px;
+  background-color: #e6eeff;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(19px);
+  background-color: #0052ff;
+}

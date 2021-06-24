@@ -120,3 +120,9 @@
       <small>Check <a href="https://github.com/OlleyO/ui-kit/blob/main/components.html">components.html</a> for more details.<small>
     </ul>
     <h2>Usage</h2>
+    <h2>How to get started</h2>
+        <ol>
+          <li>Download the code</li>
+          <li>Execute npm install in the directory</li>
+          <li>Choose html file</li>
+        </ol>

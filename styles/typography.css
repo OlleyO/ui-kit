@@ -1,3 +1,35 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../fonts/SFPro/SFProDisplay-Black.ttf") format("truetype"),
+    url("../fonts/SFPro/SFProDisplay-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: SFProDisplayText;
+  src: url("../fonts/SFProText/FontsFree-Net-SFProText-Regular.ttf");
+}
+
+h2,
+h3,
+h4 {
+  font-family: SFProDisplay;
+}
+
+h5,
+h6 {
+  font-family: SFProDisplayText;
+}
+
+p,
+h1 {
+  font-family: Inter;
+}
+
 .h1 {
   font-size: 32px;
   line-height: 42px;

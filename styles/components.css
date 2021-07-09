@@ -467,3 +467,75 @@ body {
   transform: translateX(19px);
   background-color: #0052ff;
 }
+
+/* Select list */
+
+.custom-select {
+  position: relative;
+
+  width: 325px;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #fff;
+  border: 1px solid #0052ff;
+  border-radius: 4px;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(0, 25, 76, 1);
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.select-selected.select-arrow-active:after {
+  top: 15px;
+  transform: rotate(-135deg);
+  border-color: rgba(0, 82, 255, 1);
+}
+
+.select-items div,
+.select-selected {
+  color: rgba(0, 25, 76, 1);
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-items div:hover,
+.select-selected:hover {
+  color: rgba(0, 82, 255, 1);
+}
+
+.select-selected:hover::after {
+  border-color: rgba(0, 82, 255, 1);
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
